@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Odin Library</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Welcome to the Odin Library</h1>
+    
+    <button id="form-toggle">Add a new book</button><br>
+
+    <form action="/" method="GET" id="add-book" class="form-element">
+           <div class="form-element">
+            <label for="title"><b>Title</b></label>
+            <input type="text" placeholder="Title" name="title" id="title" required><br>
+        </div>
+        
+        <div class="form-element">
+            <label for="author"><b>Author</b></label>
+            <input type="text" placeholder="Author" name="author" id="author" required><br>
+        </div>
+        
+        <div class="form-element">
+            <label for="pages"><b>Pages</b></label>
+            <input type="number" placeholder="Number of pages" name="pages" id="pages" min="1" required><br>
+        </div>
+
+        <div class="form-element">
+            <label for="read">Read</label>
+            <input type="checkbox" id="read" name="read">
+        </div>
+
+        <button class="form-element" type="submit" id="add-book-btn">Add Book</button>
+    </form>
+
+    <h2>Library</h2>
+    <div class="library">
+        
+        <!-- forEach loop displaying each book in the library -->
+    </div>
+    <script src= "script.js"></script>
+</body>
+</html>
